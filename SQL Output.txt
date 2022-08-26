@@ -1,0 +1,587 @@
+mysql> show databases;
++-------------------------+
+| Database                |
++-------------------------+
+| grocery_shop_management |
+| information_schema      |
+| mysql                   |
+| performance_schema      |
+| sys                     |
++-------------------------+
+5 rows in set (0.01 sec)
+
+mysql> USE Grocery_Shop_Management;
+Database changed
+mysql> SHOW TABLES;
++-----------------------------------+
+| Tables_in_grocery_shop_management |
++-----------------------------------+
+| bakery                            |
+| bathroom_and_toiletries           |
+| beverages                         |
+| cereals_and_spices                |
+| dairy                             |
+| fruits_and_vegetables             |
+| orders                            |
+| sales                             |
+| snacks                            |
+| users                             |
++-----------------------------------+
+10 rows in set (0.02 sec)
+
+mysql> INSERT INTO Bakery VALUES('BA01','White Bread',20,25,17);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Bakery VALUES('BA02','Brown Bread',25,30,19);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Bakery VALUES('BA03','Fruit Cake',30,40,13);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Bakery VALUES('BA04','Burger Buns',30,35,15);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Bakery VALUES('BA05','Cookies',40,55,21);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Bakery VALUES('BA06','Biscuit',30,50,23);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Dairy VALUES('DA01','Milk',40,45,21);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Dairy VALUES('DA02','Butter',85,100,11);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Dairy VALUES('DA03','Cheese',80,95,13);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Dairy VALUES('DA04','Yogurt',35,40,18);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Dairy VALUES('DA05','Ice Cream',85,90,12);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Dairy VALUES('DA06','Buttermilk',20,25,19);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Cereals_And_Spices VALUES('CS01','Turmeric',30,40,11);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Cereals_And_Spices VALUES('CS02','Rice',90,110,15);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Cereals_And_Spices VALUES('CS03','Salt',18,20,21);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Cereals_And_Spices VALUES('CS04','Chickpeas',50,65,17);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Cereals_And_Spices VALUES('CS05','Pepper',35,45,13);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Cereals_And_Spices VALUES('CS06','Gram',60,75,19);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Beverages VALUES('BE01','Soda',15,20,23);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Beverages VALUES('BE02','Juice',25,30,19);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Beverages VALUES('BE03','Soft Drinks',30,35,21);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Beverages VALUES('BE04','Lemonade',10,15,17);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Beverages VALUES('BE05','Coffee',15,25,20);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Beverages VALUES('BE06','Water',10,12,25);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Fruits_And_Vegetables VALUES('FV01','Orange',42,50,13);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Fruits_And_Vegetables VALUES('FV02','Banana',32,40,11);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Fruits_And_Vegetables VALUES('FV03','Onion',30,35,18);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Fruits_And_Vegetables VALUES('FV04','Tomato',20,25,14);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Fruits_And_Vegetables VALUES('FV05','Apple',65,80,12);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO Fruits_And_Vegetables VALUES('FV06','Potato',15,20,16);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Bathroom_And_Toiletries VALUES('BT01','Soap',45,60,23);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Bathroom_And_Toiletries VALUES('BT02','Shampoo',210,250,13);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Bathroom_And_Toiletries VALUES('BT03','Toothpaste',70,80,17);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Bathroom_And_Toiletries VALUES('BT04','Face Wash',130,150,18);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Bathroom_And_Toiletries VALUES('BT05','Hair Oil',85,100,15);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO Bathroom_And_Toiletries VALUES('BT06','Toothbrush',55,60,25);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Snacks VALUES('SN01','Chips',25,30,14);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Snacks VALUES('SN02','Chocolates',65,80,16);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Snacks VALUES('SN03','Nachos',35,40,19);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO Snacks VALUES('SN04','Noodles',25,30,11);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO Snacks VALUES('SN05','Soup',40,45,12);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO Snacks VALUES('SN06','Candy',10,15,23);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> DESC Bakery;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Product_Code  | varchar(50) | YES  |     | NULL    |       |
+| Product_Name  | varchar(50) | YES  |     | NULL    |       |
+| Cost_Price    | int         | YES  |     | NULL    |       |
+| Selling_Price | int         | YES  |     | NULL    |       |
+| Quantity      | int         | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+5 rows in set (0.01 sec)
+
+mysql> DESC Dairy;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Product_Code  | varchar(50) | YES  |     | NULL    |       |
+| Product_Name  | varchar(50) | YES  |     | NULL    |       |
+| Cost_Price    | int         | YES  |     | NULL    |       |
+| Selling_Price | int         | YES  |     | NULL    |       |
+| Quantity      | int         | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> DESC Cereals_And_Spices;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Product_Code  | varchar(50) | YES  |     | NULL    |       |
+| Product_Name  | varchar(50) | YES  |     | NULL    |       |
+| Cost_Price    | int         | YES  |     | NULL    |       |
+| Selling_Price | int         | YES  |     | NULL    |       |
+| Quantity      | int         | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> DESC Beverages;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Product_Code  | varchar(50) | YES  |     | NULL    |       |
+| Product_Name  | varchar(50) | YES  |     | NULL    |       |
+| Cost_Price    | int         | YES  |     | NULL    |       |
+| Selling_Price | int         | YES  |     | NULL    |       |
+| Quantity      | int         | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> DESC Fruits_And_Vegetables;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Product_Code  | varchar(50) | YES  |     | NULL    |       |
+| Product_Name  | varchar(50) | YES  |     | NULL    |       |
+| Cost_Price    | int         | YES  |     | NULL    |       |
+| Selling_Price | int         | YES  |     | NULL    |       |
+| Quantity      | int         | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> DESC Bathroom_And_Toiletries;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Product_Code  | varchar(50) | YES  |     | NULL    |       |
+| Product_Name  | varchar(50) | YES  |     | NULL    |       |
+| Cost_Price    | int         | YES  |     | NULL    |       |
+| Selling_Price | int         | YES  |     | NULL    |       |
+| Quantity      | int         | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> DESC Snacks;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Product_Code  | varchar(50) | YES  |     | NULL    |       |
+| Product_Name  | varchar(50) | YES  |     | NULL    |       |
+| Cost_Price    | int         | YES  |     | NULL    |       |
+| Selling_Price | int         | YES  |     | NULL    |       |
+| Quantity      | int         | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> DESC Orders;
++------------------+-------------+------+-----+---------+-------+
+| Field            | Type        | Null | Key | Default | Extra |
++------------------+-------------+------+-----+---------+-------+
+| Product_Category | varchar(50) | YES  |     | NULL    |       |
+| Product_Code     | varchar(50) | YES  |     | NULL    |       |
+| Product_Name     | varchar(50) | YES  |     | NULL    |       |
+| Quantity         | int         | YES  |     | NULL    |       |
+| Cost_Price       | int         | YES  |     | NULL    |       |
+| Amount           | int         | YES  |     | NULL    |       |
++------------------+-------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> DESC Sales;
++------------------+-------------+------+-----+---------+-------+
+| Field            | Type        | Null | Key | Default | Extra |
++------------------+-------------+------+-----+---------+-------+
+| Product_Category | varchar(50) | YES  |     | NULL    |       |
+| Product_Code     | varchar(50) | YES  |     | NULL    |       |
+| Product_Name     | varchar(50) | YES  |     | NULL    |       |
+| Date             | date        | YES  |     | NULL    |       |
+| Quantity         | int         | YES  |     | NULL    |       |
+| Selling_Price    | int         | YES  |     | NULL    |       |
+| Amount           | int         | YES  |     | NULL    |       |
+| Profit           | int         | YES  |     | NULL    |       |
++------------------+-------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
+
+mysql> DESC Users;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| User_Id  | varchar(50) | YES  |     | NULL    |       |
+| Password | varchar(50) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Bakery;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| BA01         | White Bread  |         20 |            25 |       17 |
+| BA02         | Brown Bread  |         25 |            30 |       19 |
+| BA03         | Fruit Cake   |         30 |            40 |       13 |
+| BA04         | Burger Buns  |         30 |            35 |       15 |
+| BA05         | Cookies      |         40 |            55 |       21 |
+| BA06         | Biscuit      |         30 |            50 |       23 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Dairy;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| DA01         | Milk         |         40 |            45 |       21 |
+| DA02         | Butter       |         85 |           100 |       11 |
+| DA03         | Cheese       |         80 |            95 |       13 |
+| DA04         | Yogurt       |         35 |            40 |       18 |
+| DA05         | Ice Cream    |         85 |            90 |       12 |
+| DA06         | Buttermilk   |         20 |            25 |       19 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Cereals_And_Spices;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| CS01         | Turmeric     |         30 |            40 |       11 |
+| CS02         | Rice         |         90 |           110 |       15 |
+| CS03         | Salt         |         18 |            20 |       21 |
+| CS04         | Chickpeas    |         50 |            65 |       17 |
+| CS05         | Pepper       |         35 |            45 |       13 |
+| CS06         | Gram         |         60 |            75 |       19 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Beverages;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| BE01         | Soda         |         15 |            20 |       23 |
+| BE02         | Juice        |         25 |            30 |       19 |
+| BE03         | Soft Drinks  |         30 |            35 |       21 |
+| BE04         | Lemonade     |         10 |            15 |       17 |
+| BE05         | Coffee       |         15 |            25 |       20 |
+| BE06         | Water        |         10 |            12 |       25 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Fruits_And_Vegetables;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| FV01         | Orange       |         42 |            50 |       13 |
+| FV02         | Banana       |         32 |            40 |       11 |
+| FV03         | Onion        |         30 |            35 |       18 |
+| FV04         | Tomato       |         20 |            25 |       14 |
+| FV05         | Apple        |         65 |            80 |       12 |
+| FV06         | Potato       |         15 |            20 |       16 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Bathroom_And_Toiletries;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| BT01         | Soap         |         45 |            60 |       23 |
+| BT02         | Shampoo      |        210 |           250 |       13 |
+| BT03         | Toothpaste   |         70 |            80 |       17 |
+| BT04         | Face Wash    |        130 |           150 |       18 |
+| BT05         | Hair Oil     |         85 |           100 |       15 |
+| BT06         | Toothbrush   |         55 |            60 |       25 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Snacks;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| SN01         | Chips        |         25 |            30 |       14 |
+| SN02         | Chocolates   |         65 |            80 |       16 |
+| SN03         | Nachos       |         35 |            40 |       19 |
+| SN04         | Noodles      |         25 |            30 |       11 |
+| SN05         | Soup         |         40 |            45 |       12 |
+| SN06         | Candy        |         10 |            15 |       23 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Users;
++---------+----------+
+| User_Id | Password |
++---------+----------+
+| Mukund  | 14062003 |
+| Kartik  | 22112002 |
++---------+----------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Bakery;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| BA01         | White Bread  |         20 |            25 |       17 |
+| BA02         | Brown Bread  |         25 |            30 |       19 |
+| BA03         | Fruit Cake   |         30 |            40 |       13 |
+| BA04         | Burger Buns  |         30 |            35 |       15 |
+| BA05         | Cookies      |         40 |            55 |       21 |
+| BA06         | Biscuit      |         30 |            50 |       23 |
+| BA07         | Pastry       |         55 |            70 |       12 |
++--------------+--------------+------------+---------------+----------+
+7 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Dairy;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| DA01         | Milk         |         40 |            45 |       21 |
+| DA02         | Butter       |         90 |           100 |       11 |
+| DA03         | Cheese       |         80 |            95 |       13 |
+| DA04         | Yogurt       |         35 |            40 |       18 |
+| DA05         | Ice Cream    |         85 |            90 |       12 |
+| DA06         | Buttermilk   |         20 |            25 |       19 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Cereals_And_Spices;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| CS01         | Turmeric     |         30 |            40 |       11 |
+| CS02         | Rice         |         90 |           105 |       15 |
+| CS03         | Salt         |         18 |            20 |       21 |
+| CS04         | Chickpeas    |         50 |            65 |       17 |
+| CS05         | Pepper       |         35 |            45 |       13 |
+| CS06         | Gram         |         60 |            75 |       19 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Beverages;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| BE01         | Soda         |         15 |            20 |       23 |
+| BE02         | Juice        |         25 |            30 |       19 |
+| BE03         | Soft Drinks  |         30 |            35 |       21 |
+| BE04         | Lemonade     |         10 |            15 |       17 |
+| BE05         | Coffee       |         15 |            25 |       15 |
+| BE06         | Water        |         10 |            12 |       25 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Bakery;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| BA01         | White Bread  |         20 |            25 |       17 |
+| BA02         | Brown Bread  |         25 |            30 |       19 |
+| BA03         | Fruit Cake   |         30 |            40 |       13 |
+| BA04         | Burger Buns  |         30 |            35 |       15 |
+| BA05         | Cookies      |         40 |            55 |       21 |
+| BA06         | Biscuit      |         30 |            50 |       23 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Orders;
++-----------------------+--------------+--------------+----------+------------+--------+
+| Product_Category      | Product_Code | Product_Name | Quantity | Cost_Price | Amount |
++-----------------------+--------------+--------------+----------+------------+--------+
+| Fruits_And_Vegetables | FV05         | Apple        |        7 |         65 |    455 |
++-----------------------+--------------+--------------+----------+------------+--------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM Bakery;
++--------------+--------------+------------+---------------+----------+
+| Product_Code | Product_Name | Cost_Price | Selling_Price | Quantity |
++--------------+--------------+------------+---------------+----------+
+| BA01         | White Bread  |         20 |            25 |       17 |
+| BA02         | Brown Bread  |         25 |            30 |       19 |
+| BA03         | Fruit Cake   |         30 |            40 |       13 |
+| BA04         | Burger Buns  |         30 |            35 |       15 |
+| BA05         | Cookies      |         40 |            55 |       21 |
+| BA06         | Biscuit      |         30 |            50 |       20 |
++--------------+--------------+------------+---------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Sales;
++------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+| Product_Category | Product_Code | Product_Name | Date       | Quantity | Selling_Price | Amount | Profit |
++------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+| Bakery           | BA06         | Biscuit      | 2021-02-10 |        3 |            50 |    150 |     60 |
++------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM Orders;
++-----------------------+--------------+--------------+----------+------------+--------+
+| Product_Category      | Product_Code | Product_Name | Quantity | Cost_Price | Amount |
++-----------------------+--------------+--------------+----------+------------+--------+
+| Fruits_And_Vegetables | FV05         | Apple        |        7 |         65 |    455 |
+| Dairy                 | DA02         | Butter       |        5 |         90 |    450 |
++-----------------------+--------------+--------------+----------+------------+--------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Orders;
++-------------------------+--------------+--------------+----------+------------+--------+
+| Product_Category        | Product_Code | Product_Name | Quantity | Cost_Price | Amount |
++-------------------------+--------------+--------------+----------+------------+--------+
+| Fruits_And_Vegetables   | FV05         | Apple        |        7 |         65 |    455 |
+| Dairy                   | DA02         | Butter       |        5 |         90 |    450 |
+| Bakery                  | BA03         | Fruit Cake   |        5 |         30 |    150 |
+| Beverages               | BE04         | Lemonade     |        3 |         10 |     30 |
+| Snacks                  | SN04         | Noodles      |        8 |         25 |    200 |
+| Bathroom_And_Toiletries | BT02         | Shampoo      |        3 |        210 |    630 |
++-------------------------+--------------+--------------+----------+------------+--------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Orders;
++-------------------------+--------------+--------------+----------+------------+--------+
+| Product_Category        | Product_Code | Product_Name | Quantity | Cost_Price | Amount |
++-------------------------+--------------+--------------+----------+------------+--------+
+| Fruits_And_Vegetables   | FV05         | Apple        |        7 |         65 |    455 |
+| Dairy                   | DA02         | Butter       |        6 |         90 |    450 |
+| Bakery                  | BA03         | Fruit Cake   |        5 |         30 |    150 |
+| Beverages               | BE04         | Lemonade     |        3 |         10 |     30 |
+| Snacks                  | SN04         | Noodles      |        8 |         25 |    200 |
+| Bathroom_And_Toiletries | BT02         | Shampoo      |        3 |        210 |    630 |
++-------------------------+--------------+--------------+----------+------------+--------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Orders;
++-------------------------+--------------+--------------+----------+------------+--------+
+| Product_Category        | Product_Code | Product_Name | Quantity | Cost_Price | Amount |
++-------------------------+--------------+--------------+----------+------------+--------+
+| Fruits_And_Vegetables   | FV05         | Apple        |        7 |         65 |    455 |
+| Dairy                   | DA02         | Butter       |        5 |         90 |    450 |
+| Bakery                  | BA03         | Fruit Cake   |        5 |         30 |    150 |
+| Beverages               | BE04         | Lemonade     |        3 |         10 |     30 |
+| Snacks                  | SN04         | Noodles      |        8 |         25 |    200 |
+| Bathroom_And_Toiletries | BT02         | Shampoo      |        3 |        210 |    630 |
++-------------------------+--------------+--------------+----------+------------+--------+
+6 rows in set (0.01 sec)
+
+mysql> SELECT * FROM Orders;
++-------------------------+--------------+--------------+----------+------------+--------+
+| Product_Category        | Product_Code | Product_Name | Quantity | Cost_Price | Amount |
++-------------------------+--------------+--------------+----------+------------+--------+
+| Fruits_And_Vegetables   | FV05         | Apple        |        7 |         65 |    455 |
+| Dairy                   | DA02         | Butter       |        6 |         90 |    540 |
+| Bakery                  | BA03         | Fruit Cake   |        5 |         30 |    150 |
+| Beverages               | BE04         | Lemonade     |        3 |         10 |     30 |
+| Snacks                  | SN04         | Noodles      |        8 |         25 |    200 |
+| Bathroom_And_Toiletries | BT02         | Shampoo      |        3 |        210 |    630 |
++-------------------------+--------------+--------------+----------+------------+--------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Orders;
++-------------------------+--------------+--------------+----------+------------+--------+
+| Product_Category        | Product_Code | Product_Name | Quantity | Cost_Price | Amount |
++-------------------------+--------------+--------------+----------+------------+--------+
+| Fruits_And_Vegetables   | FV05         | Apple        |        7 |         65 |    455 |
+| Dairy                   | DA02         | Butter       |        6 |         90 |    540 |
+| Bakery                  | BA03         | Fruit Cake   |        5 |         30 |    150 |
+| Snacks                  | SN04         | Noodles      |        8 |         25 |    200 |
+| Bathroom_And_Toiletries | BT02         | Shampoo      |        3 |        210 |    630 |
++-------------------------+--------------+--------------+----------+------------+--------+
+5 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Sales;
++------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+| Product_Category | Product_Code | Product_Name | Date       | Quantity | Selling_Price | Amount | Profit |
++------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+| Bakery           | BA06         | Biscuit      | 2021-02-10 |        3 |            50 |    150 |     60 |
++------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM Sales;
++-------------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+| Product_Category        | Product_Code | Product_Name | Date       | Quantity | Selling_Price | Amount | Profit |
++-------------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+| Bakery                  | BA06         | Biscuit      | 2021-02-10 |        3 |            50 |    150 |     60 |
+| Bathroom_And_Toiletries | BT01         | Soap         | 2021-02-11 |        2 |            60 |    120 |     30 |
++-------------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Sales;
++-------------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+| Product_Category        | Product_Code | Product_Name | Date       | Quantity | Selling_Price | Amount | Profit |
++-------------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+| Bakery                  | BA06         | Biscuit      | 2021-02-10 |        3 |            50 |    150 |     60 |
+| Bathroom_And_Toiletries | BT01         | Soap         | 2021-02-11 |        2 |            60 |    120 |     30 |
+| Snacks                  | SN03         | Nachos       | 2021-02-11 |        4 |            40 |    160 |     20 |
+| Dairy                   | DA04         | Yogurt       | 2021-02-11 |        1 |            40 |     40 |      5 |
+| Beverages               | BE06         | Water        | 2021-02-11 |        5 |            12 |     60 |     10 |
+| Fruits_And_Vegetables   | FV03         | Onion        | 2021-02-11 |        2 |            35 |     70 |     10 |
++-------------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM Sales;
++-------------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+| Product_Category        | Product_Code | Product_Name | Date       | Quantity | Selling_Price | Amount | Profit |
++-------------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+| Bathroom_And_Toiletries | BT01         | Soap         | 2021-02-11 |        2 |            60 |    120 |     30 |
+| Snacks                  | SN03         | Nachos       | 2021-02-11 |        4 |            40 |    160 |     20 |
+| Dairy                   | DA04         | Yogurt       | 2021-02-11 |        1 |            40 |     40 |      5 |
+| Beverages               | BE06         | Water        | 2021-02-11 |        5 |            12 |     60 |     10 |
+| Fruits_And_Vegetables   | FV03         | Onion        | 2021-02-11 |        2 |            35 |     70 |     10 |
++-------------------------+--------------+--------------+------------+----------+---------------+--------+--------+
+5 rows in set (0.00 sec)

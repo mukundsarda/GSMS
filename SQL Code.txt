@@ -1,0 +1,70 @@
+INSERT INTO Bakery VALUES('BA01','White Bread',20,25,17);
+INSERT INTO Bakery VALUES('BA02','Brown Bread',25,30,19);
+INSERT INTO Bakery VALUES('BA03','Fruit Cake',30,40,13);
+INSERT INTO Bakery VALUES('BA04','Burger Buns',30,35,15);
+INSERT INTO Bakery VALUES('BA05','Cookies',40,55,21);
+INSERT INTO Bakery VALUES('BA06','Biscuit',30,50,23);
+
+INSERT INTO Dairy VALUES('DA01','Milk',40,45,21);
+INSERT INTO Dairy VALUES('DA02','Butter',85,100,11);
+INSERT INTO Dairy VALUES('DA03','Cheese',80,95,13);
+INSERT INTO Dairy VALUES('DA04','Yogurt',35,40,18);
+INSERT INTO Dairy VALUES('DA05','Ice Cream',85,90,12);
+INSERT INTO Dairy VALUES('DA06','Buttermilk',20,25,19);
+
+INSERT INTO Cereals_And_Spices VALUES('CS01','Turmeric',30,40,11);
+INSERT INTO Cereals_And_Spices VALUES('CS02','Rice',90,110,15);
+INSERT INTO Cereals_And_Spices VALUES('CS03','Salt',18,20,21);
+INSERT INTO Cereals_And_Spices VALUES('CS04','Chickpeas',50,65,17);
+INSERT INTO Cereals_And_Spices VALUES('CS05','Pepper',35,45,13);
+INSERT INTO Cereals_And_Spices VALUES('CS06','Gram',60,75,19);
+
+INSERT INTO Beverages VALUES('BE01','Soda',15,20,23);
+INSERT INTO Beverages VALUES('BE02','Juice',25,30,19);
+INSERT INTO Beverages VALUES('BE03','Soft Drinks',30,35,21);
+INSERT INTO Beverages VALUES('BE04','Lemonade',10,15,17);
+INSERT INTO Beverages VALUES('BE05','Coffee',15,25,20);
+INSERT INTO Beverages VALUES('BE06','Water',10,12,25);
+
+INSERT INTO Fruits_And_Vegetables VALUES('FV01','Orange',42,50,13);
+INSERT INTO Fruits_And_Vegetables VALUES('FV02','Banana',32,40,11);
+INSERT INTO Fruits_And_Vegetables VALUES('FV03','Onion',30,35,18);
+INSERT INTO Fruits_And_Vegetables VALUES('FV04','Tomato',20,25,14);
+INSERT INTO Fruits_And_Vegetables VALUES('FV05','Apple',65,80,12);
+INSERT INTO Fruits_And_Vegetables VALUES('FV06','Potato',15,20,16);
+
+INSERT INTO Bathroom_And_Toiletries VALUES('BT01','Soap',45,60,23);
+INSERT INTO Bathroom_And_Toiletries VALUES('BT02','Shampoo',210,250,13);
+INSERT INTO Bathroom_And_Toiletries VALUES('BT03','Toothpaste',70,80,17);
+INSERT INTO Bathroom_And_Toiletries VALUES('BT04','Face Wash',130,150,18);
+INSERT INTO Bathroom_And_Toiletries VALUES('BT05','Hair Oil',85,100,15);
+INSERT INTO Bathroom_And_Toiletries VALUES('BT06','Toothbrush',55,60,25);
+
+INSERT INTO Snacks VALUES('SN01','Chips',25,30,14);
+INSERT INTO Snacks VALUES('SN02','Chocolates',65,80,16);
+INSERT INTO Snacks VALUES('SN03','Nachos',35,40,19);
+INSERT INTO Snacks VALUES('SN04','Noodles',25,30,11);
+INSERT INTO Snacks VALUES('SN05','Soup',40,45,12);
+INSERT INTO Snacks VALUES('SN06','Candy',10,15,23);
+
+DESC Bakery;
+DESC Dairy;
+DESC Cereals_And_Spices;
+DESC Beverages;
+DESC Fruits_And_Vegetables;
+DESC Bathroom_And_Toiletries;
+DESC Snacks;
+DESC Orders;
+DESC Sales;
+DESC Users;
+
+SELECT * FROM Bakery;
+SELECT * FROM Dairy;
+SELECT * FROM Cereals_And_Spices;
+SELECT * FROM Beverages;
+SELECT * FROM Fruits_And_Vegetables;
+SELECT * FROM Bathroom_And_Toiletries;
+SELECT * FROM Snacks;
+SELECT * FROM Orders;
+SELECT * FROM Sales;
+SELECT * FROM Users;
