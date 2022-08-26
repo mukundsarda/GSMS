@@ -1,2 +1,6 @@
 # GSMS
 Grocery Shop Management System- using Python and MySQL
+(Python & MySQL connectivity using pymysql library)
+
+# Introduction
+Grocery shops are present everywhere across the country. But have you ever thought how these shops are managed? Management of these shops with the old existing manual management system has become a tedious and tiresome work due to increase in number of both the customers and variety of products. Thus, in order to avoid errors while billings of items and challenges in managing the information of products, suppliers, customers, etc that prevails in the old management system, I have created a new “Grocery Shop Management System”. The purpose of this system is to automate the existing system by the help of software which helps the shopkeeper fulfilling all his requirements by providing all types of create, read and update operations. It also helps to store the data and information in form of computerised records for a longer period of time with easy accessing and manipulation of the same. This in turn would make the management more efficient by reducing the manual work and also provide better utilization of resources. It will also help in providing better services to the customers.
